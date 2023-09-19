@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/sections/footer";
 import PersonalDetails from "@/sections/pesonalDetails";
 import Projects from "@/sections/projects";
 import Technologies from "@/sections/technologies";
@@ -12,6 +13,7 @@ export default function Home() {
       <PersonalDetails/>
       <Technologies/>
       <Projects/>
+      <Footer/>
     </main>
   );
 }

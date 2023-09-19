@@ -1,5 +1,4 @@
 import Icon from '@/components/Icon'
-import React from 'react'
 
 const SocialMedia = () => {
   return (
