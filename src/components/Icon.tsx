@@ -10,7 +10,7 @@ interface IconProps {
 const Icon = ({ size, altText, img, url }: IconProps) => {
   return (
     <a
-      className="hover:-pointer"
+      className="hover:cursor-pointer"
       href={url}
       target="blank"
       rel="noopener noreferrer"
