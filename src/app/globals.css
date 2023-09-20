@@ -8,3 +8,13 @@
 body {
   font-family: 'Montserrat', sans-serif !important;
 }
+
+
+.h-custom {
+  height: 400px;
+}
+
+.project-transition {
+  transition: opacity 0.5s ease-in-out;
+}
+

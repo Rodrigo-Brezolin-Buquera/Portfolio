@@ -11,7 +11,7 @@ export interface Project {
 
 interface ProjectDetailsProps {
   project: Project;
-  color?: string;
+  direction?: string;
 }
 
 const ProjectDetails = ({ project }: ProjectDetailsProps) => {

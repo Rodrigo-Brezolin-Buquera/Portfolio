@@ -16,5 +16,22 @@ export const projectsList: Project[] = [
     status: "Em produção ",
     techs: ["AWS", "Typescript", "Typescript2"], 
     githubURL: "url"
+},
+{
+    name: "Nome Projeto3",
+    area: "Frontend",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, fuga,      ea accusantium corporis quia pariatur alias recusandae minima officia",      
+    status: "Em produção ",
+    techs: ["AWS", "Typescript", "Typescript2"], 
+    githubURL: "url"
+},
+{
+    name: "Nome Projeto4",
+    area: "Frontend",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, fuga,      ea accusantium corporis quia pariatur alias recusandae minima officia",      
+    status: "Em produção ",
+    techs: ["AWS", "Typescript", "Typescript2"], 
+    githubURL: "url"
 }
+
 ]
