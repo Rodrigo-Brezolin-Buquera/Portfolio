@@ -14,20 +14,21 @@ interface ProjectDetailsProps {
   direction?: string;
 }
 
-const ProjectDetails = ({ project }: ProjectDetailsProps) => {
+const ProjectDetails = ({ project, direction }: ProjectDetailsProps) => {
   const { name, area, description, status, techs, githubURL } = project;
 
   const formattedTechs = techs.join(" - ");
+  const flexDirection= direction === "reverse" ? "flex-row-reverse  bg-pink-light " : "flex-row bg-pink";
 
   return (
-    <article className="flex w-full justify-between bg-pink mb-8">
+    <article className={`flex w-full justify-between  mb-8 ${flexDirection}`}>
       <Image
         src={"/mockPicture.png"}
         alt={"texto mock"}
         width={600}
         height={800}
       />
-      <div className="flex flex-col w-full p-4 gap-2 pr-20">
+      <div className="flex flex-col w-full p-4 gap-2 px-20">
         <div>
           <p className=" font-bold  text-3xl mt-6 tracking-wide ">{name}</p>
           <p className=" text-xl tracking-wide ">{area}</p>

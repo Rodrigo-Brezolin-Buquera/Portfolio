@@ -7,21 +7,25 @@ import { useCarousel } from "./useCarousel";
 const ProjectList = () => {
   const {currentProject, nextProject, prevProject} = useCarousel()
 
+  const list = projectsList.map((project, index) => {
+    const direction = index % 2 === 0 ? "forward" : "reverse"
+    return (
+      <div
+      className={`absolute project-transition
+      ${index === currentProject ? "opacity-100" : "opacity-0"}
+      `}
+      >
+      <ProjectDetails project={project} direction={direction} />
+    </div>
+      )
+  })
+
   return (
     <div className={"relative w-full h-custom"}>
       <ChevronButton side={"right"} handler={nextProject} />
       <ChevronButton side={"left"} handler={prevProject} />
 
-
-      {projectsList.map((project, index) => (
-        <div
-        className={`absolute project-transition
-        ${index === currentProject ? "opacity-100" : "opacity-0"}
-        `}
-        >
-          <ProjectDetails project={project} />
-        </div>
-      ))}
+      {list}
     </div>
   );
 };
