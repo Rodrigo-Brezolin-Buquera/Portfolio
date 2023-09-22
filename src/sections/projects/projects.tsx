@@ -28,7 +28,7 @@ export const projectsList: Project[] = [
   {
     name: "App - Yoga Mangala",
     area: "Frontend-mobile",
-    description: "Versão mobile do sistema de estudantes web em estágio inicial de desenvolvimento.",
+    description: "Versão mobile do sistema de estudantes web em estágio inicial de desenvolvimento. ",
     status: "Em desenvolvimento",
     techs: ["React Native", "Expo", "React Navigation"],
     githubURL: "https://github.com/Rodrigo-Brezolin-Buquera/YGM-mobile"

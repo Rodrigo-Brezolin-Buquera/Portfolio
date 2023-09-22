@@ -1,4 +1,7 @@
+import { useResize } from "@/hooks/useResize";
 import Image from "next/image";
+import "../../app/globals.css";
+
 
 export interface Project {
   name: string;
@@ -15,20 +18,27 @@ interface ProjectDetailsProps {
 }
 
 const ProjectDetails = ({ project, direction }: ProjectDetailsProps) => {
-  const { name, area, description, status, techs, githubURL } = project;
+  const imageSize = useResize(414,640,880)
+  const imageHeight = imageSize * 4/3
 
+
+  
+  const flexDirection= direction === "reverse" ? "sm:flex-row-reverse  bg-pink-light " : "sm:flex-row bg-pink";
+  const textPadding = direction === "reverse" ? "sm:pl-24" : "sm:pr-24"
+  
+  const { name, area, description, status, techs, githubURL } = project;
   const formattedTechs = techs.join(" - ");
-  const flexDirection= direction === "reverse" ? "flex-row-reverse  bg-pink-light " : "flex-row bg-pink";
 
   return (
-    <article className={`flex w-full justify-between  mb-8 ${flexDirection}`}>
+    <article className={`w-scren flex flex-col justify-between mb-8 ${flexDirection}`}>
       <Image
         src={"/mockPicture.png"}
         alt={"texto mock"}
-        width={600}
-        height={800}
+        width={imageSize}
+        height={imageHeight}
+        className="overflow-hidden"
       />
-      <div className="flex flex-col w-full p-4 gap-2 px-20">
+      <div className={`flex flex-col sm:justify-center w-full grow p-4 gap-5 h-card-mobile  ${textPadding}`}>
         <div>
           <p className=" font-bold  text-3xl mt-6 tracking-wide ">{name}</p>
           <p className=" text-xl tracking-wide ">{area}</p>
