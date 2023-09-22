@@ -1,5 +1,5 @@
-import { backendTechs, frontendTechs } from "@/global/ptTexts";
 import TechList from "./TechList";
+import { backendTechs, frontendTechs } from "./tecnologies";
 
 const Technologies = () => {
   return (

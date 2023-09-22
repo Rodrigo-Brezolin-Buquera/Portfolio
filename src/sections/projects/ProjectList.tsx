@@ -1,4 +1,4 @@
-import { projectsList } from "@/global/mockProject";
+import { projectsList } from "@/sections/projects/projects";
 import ProjectDetails from "./ProjectDetails";
 import "../../app/globals.css";
 import ChevronButton from "./ChevronButton";
@@ -11,6 +11,7 @@ const ProjectList = () => {
     const direction = index % 2 === 0 ? "forward" : "reverse"
     return (
       <div
+      key={project.name}
       className={`absolute project-transition
       ${index === currentProject ? "opacity-100" : "opacity-0"}
       `}

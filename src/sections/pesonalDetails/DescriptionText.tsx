@@ -10,12 +10,7 @@ const DescriptionText = () => {
       </p>
 
       <p className="text-sm tracking-wide ">
-        Eu sempre gostei de apreender. Ao longo de toda minha vida busquei novos
-        conhecimentos que me agregassem algo, mesmo não sendo diretamente com
-        aquilo que eu atuava no momento. Minha trajetória é um exemplo claro
-        deste desejo constante pelo (auto)conhecimento. Desde de minha formação
-        como engenheiro ambiental estive sempre me transformando. Atualmente, na
-        programação e desenvolvimento web.
+      Minha jornada é uma busca incessante por novos conhecimentos. Essa busca me conduziu à minha formação como engenheiro ambiental e pós-graduações. No entanto, a sede de aprendizado e a busca por novos desafios me levaram a uma transição de carreira. Hoje, como desenvolvedor web fullstack, ofereço habilidades técnicas sólidas e estou pronto para enfrentar desafios e inovações, entregando soluções de qualidade superior.
       </p>
 
       <button className="bg-cyan shadow-md rounded-lg p-2 w-32 m-8 hover:cursor-pointer hover:bg-cyan-dark">

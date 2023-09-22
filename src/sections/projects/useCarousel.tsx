@@ -1,4 +1,4 @@
-import { projectsList } from "@/global/mockProject";
+import { projectsList } from "@/sections/projects/projects";
 import { useState } from "react";
 
 export const useCarousel = () => {

@@ -4,7 +4,7 @@ interface IconProps {
   size: number;
   altText: string;
   img: string;
-  url?: string;
+  url: string;
 }
 
 const Icon = ({ size, altText, img, url }: IconProps) => {
