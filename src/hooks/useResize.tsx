@@ -1,9 +1,23 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
-export const useResizeImg = () => {
+export const useResize = (
+  smallSize: number,
+  mediumSize: number,
+  bigSize: number
+) => {
   const getInitialWidth = () => {
+
+    
+
+
     const screenWidth = window.innerWidth;
-    return screenWidth >= 1100 ? 400 : screenWidth < 768 ? 240 : 320;
+    return screenWidth >= 1100
+      ? bigSize
+      : screenWidth < 768
+      ? smallSize
+      : mediumSize;
   };
   const [imageSize, setImageSize] = useState(getInitialWidth());
 
@@ -22,4 +36,3 @@ export const useResizeImg = () => {
 
   return imageSize;
 };
-
