@@ -12,8 +12,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col w-full bg-white text-white">
       <PersonalDetails/>
       <Technologies/>
-      {/* <Projects/>
-      <Footer/>  */}
+      {/* <Projects/> */}
+      <Footer/> 
     </main>
   );
 }
