@@ -2,7 +2,7 @@ import IconGroup from "@/components/IconGroup";
 
 const SocialMedia = () => {
   return (
-    <div className="absolute flex flex-col top-1/3 right-0 pr-4 space-y-4">
+    <div className="sm:absolute mb-2 flex space-x-4 sm:mb-0 sm:flex-col sm:items-end right-0 sm:pr-4 sm:space-y-4">
       <IconGroup size={40} />
     </div>
   );
