@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 
 export const useResize = (
@@ -8,10 +6,6 @@ export const useResize = (
   bigSize: number
 ) => {
   const getInitialWidth = () => {
-
-    
-
-
     const screenWidth = window.innerWidth;
     return screenWidth >= 1100
       ? bigSize
