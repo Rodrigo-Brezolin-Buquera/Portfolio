@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col w-full bg-white text-white">
       <PersonalDetails/>
-      {/* <Technologies/>
-      <Projects/>
-      <Footer/> */}
+      <Technologies/>
+      {/* <Projects/>
+      <Footer/>  */}
     </main>
   );
 }
