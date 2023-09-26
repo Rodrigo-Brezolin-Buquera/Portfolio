@@ -7,7 +7,7 @@ export const projectsList = [
     status: "Em produção",
     techs: ["React", "Next.js", "Firebase", "ChakraUI", "Jest"],
     githubURL: "https://github.com/Rodrigo-Brezolin-Buquera/YGM-system",
-    image: require("../../assets/project1.jpg")
+    image: require("../../assets/project3.jpg")
   },
   {
     name: "Landing Page - Yoga Mangala",
@@ -16,7 +16,7 @@ export const projectsList = [
     status: "Em produção",
     techs: ["React", "Next.js", "Firebase", "ChakraUI"],
     githubURL: "https://github.com/Rodrigo-Brezolin-Buquera/YGM-landing-page",
-    image: require("../../assets/project1.jpg")
+    image: require("../../assets/project4.jpg")
 
   },
   {
@@ -36,7 +36,7 @@ export const projectsList = [
     status: "Em desenvolvimento",
     techs: ["React Native", "Expo", "React Navigation"],
     githubURL: "https://github.com/Rodrigo-Brezolin-Buquera/YGM-mobile",
-    image: require("../../assets/project1.jpg")
+    image: require("../../assets/project2.jpg")
 
   }
 ]

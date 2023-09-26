@@ -34,9 +34,10 @@ const IconGroup = ({ size }) => {
           src={whatsappImg}
           alt={"Whatsapp icon"}
           style={{
-            width: `${size}px`,
-            height: `${size}px`,
+            width: size,
+            height: size,
           }}
+          className={"hover:cursor-pointer"}
         />
       </ReactWhatsapp>
     </>
