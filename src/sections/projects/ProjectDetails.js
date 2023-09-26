@@ -39,7 +39,7 @@ const ProjectDetails = ({ project, direction }) => {
           <p className="text-base tracking-wide"> {formattedTechs}</p>
         </div>
 
-        <button className="bg-black shadow-md rounded-lg p-2 w-40 m-4 hover:cursor-pointer hover:bg-gray-dark">
+        <button className="bg-black shadow-md rounded-lg p-2 w-40 m-4 hover:cursor-pointer hover:bg-gray-dark z-10">
           <a
             href={githubURL}
             target="blank"

@@ -1,11 +1,12 @@
 import IconGroup from "../../components/IconGroup";
 import { useResize } from "../../hooks/useResize";
+import "./animation.css"
 
 const SocialMedia = () => {
   const imageSize = useResize("40px","50px","60px")
 
   return (
-    <div className="sm:absolute mb-2 flex space-x-4 sm:mb-0 sm:flex-col sm:items-end right-0 sm:pr-4 sm:space-y-4">
+    <div className="sm:absolute mb-2 flex space-x-4 sm:mb-0 sm:flex-col sm:items-end right-0 sm:pr-4 sm:space-y-4 image-appear">
       <IconGroup size={imageSize} />
     </div>
   );
