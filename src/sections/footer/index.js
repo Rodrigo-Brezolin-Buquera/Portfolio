@@ -1,9 +1,9 @@
-import IconGroup from "@/components/IconGroup";
-import { useResize } from "@/hooks/useResize";
+import IconGroup from "../../components/IconGroup";
+import { useResize } from "../../hooks/useResize";
 import React from "react";
 
 const Footer = () => {
-  const imageSize = useResize(50,60,70)
+  const imageSize = useResize("50px","60px","70px")
 
   return (
 

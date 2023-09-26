@@ -1,12 +1,10 @@
 import Icon from "./Icon";
 import ReactWhatsapp from "react-whatsapp";
-import Image from "next/image";
+import linkedinImg from "../assets/linkedin.svg"
+import githubImg from "../assets/github.svg"
+import whatsappImg from "../assets/whatsapp.svg"
 
-interface IconGroupProps {
-  size: number;
-}
-
-const IconGroup = ({ size }: IconGroupProps) => {
+const IconGroup = ({ size }) => {
   const whatsappMessage = "";
   const reactWhatapp = "5515981302549";
   const githubURL = "https://github.com/Rodrigo-Brezolin-Buquera";
@@ -16,13 +14,13 @@ const IconGroup = ({ size }: IconGroupProps) => {
   return (
     <>
       <Icon
-        img={"/linkedin.svg"}
+        img={linkedinImg}
         altText={"Linkedin icon"}
         url={linkedinURL}
         size={size}
       />
       <Icon
-        img={"/github.svg"}
+        img={githubImg}
         altText={"Github icon"}
         url={githubURL}
         size={size}
@@ -32,11 +30,13 @@ const IconGroup = ({ size }: IconGroupProps) => {
         message={whatsappMessage}
         element="webview"
       >
-        <Image
-          src={"/whatsapp.svg"}
+        <img
+          src={whatsappImg}
           alt={"Whatsapp icon"}
-          width={size}
-          height={size}
+          style={{
+            width: `${size}px`,
+            height: `${size}px`,
+          }}
         />
       </ReactWhatsapp>
     </>

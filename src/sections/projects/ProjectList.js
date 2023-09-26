@@ -1,21 +1,20 @@
-import { projectsList } from "@/sections/projects/projects";
+import { projectsList } from "./projects";
 import ProjectDetails from "./ProjectDetails";
 import ChevronButton from "./ChevronButton";
 import { useCarousel } from "./useCarousel";
-import { useResize } from "@/hooks/useResize";
+import { useResize } from "../../hooks/useResize";
 
 const ProjectList = () => {
   const { currentProject, nextProject, prevProject } = useCarousel();
-  const imageSize = useResize(40,50,60)
+  const imageSize = useResize("40px","50px","60px")
 
   const list = projectsList.map((project, index) => {
     const direction = index % 2 === 0 ? "forward" : "reverse";
     return (
       <div
         key={project.name}
-        className={`absolute project-transition
-      ${index === currentProject ? "opacity-100" : "opacity-0"}
-      `}
+        className={`absolute ${index === currentProject ? "opacity-100" : "opacity-0"}`}
+        style={{transition: "opacity 500ms ease-in-out"}}
       >
         <ProjectDetails project={project} direction={direction} />
       </div>

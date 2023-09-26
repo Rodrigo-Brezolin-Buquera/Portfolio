@@ -10,25 +10,6 @@ body {
 }
 
 
-.h-custom-medium {
-  height: 600px;
-}
-
-.h-custom-large {
-  height: 660px;
-}
-
-.h-custom-mobile {
-  height: 1050px;
-}
-
-.h-card-mobile {
-  min-height: 500px;
-}
 
 
-
-.project-transition {
-  transition: opacity 0.5s ease-in-out;
-}
 

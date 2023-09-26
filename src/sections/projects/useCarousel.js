@@ -1,4 +1,4 @@
-import { projectsList } from "@/sections/projects/projects";
+import { projectsList } from "./projects";
 import { useState } from "react";
 
 export const useCarousel = () => {
