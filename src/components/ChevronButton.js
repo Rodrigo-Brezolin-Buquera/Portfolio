@@ -1,4 +1,4 @@
-import chevron from "../../assets/chevron.svg"
+import chevron from "../assets/chevron.svg"
 
 const ChevronButton = ({ handler, side }) => {
   const sideStyle = side === "right" ? "right-5" : "left-5 rotate-180";

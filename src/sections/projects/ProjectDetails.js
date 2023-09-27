@@ -1,7 +1,8 @@
 import { useResize } from "../../hooks/useResize";
 
-const ProjectDetails = ({ project, direction }) => {
+const ProjectDetails = ({ project, direction, texts }) => {
   const { name, area, description, status, techs, githubURL, image } = project;
+  const {usedTechs, githubButton} = texts
   const formattedTechs = techs.join(" - ");
   const imageSize = useResize("100%", "600px", "800px")
 
@@ -18,23 +19,21 @@ const ProjectDetails = ({ project, direction }) => {
         style={{width: imageSize}}
       />
       <div 
-      className={`flex flex-col sm:justify-center w-full grow p-4 gap-5  ${textPadding}`}
+      className={`flex flex-col sm:justify-center w-full grow p-4 gap-5 ${textPadding}`}
       style={{ minHeight: "500px" }}
       >
         <div>
-          <p className=" font-bold  text-3xl mt-6 tracking-wide ">{name}</p>
+          <p className=" font-bold text-3xl mt-6 tracking-wide">{name}</p>
           <p className=" text-xl tracking-wide ">{area}</p>
         </div>
         <p className=" text-base tracking-wide ">{description}</p>
         <div>
-          <p className="  font-bold  text-base tracking-wide ">Status: </p>
+          <p className="  font-bold text-base tracking-wide">Status: </p>
           <p className="  text-base tracking-wide ">{status} </p>
         </div>
 
         <div>
-          <p className=" font-bold   text-base tracking-wide ">
-            Tecnologias utilzadas:
-          </p>
+          <p className=" font-bold text-base tracking-wide">{usedTechs}</p>
           <p className="text-base tracking-wide"> {formattedTechs}</p>
         </div>
 
@@ -45,7 +44,7 @@ const ProjectDetails = ({ project, direction }) => {
             rel="noopener noreferrer"
             className="tracking-wide "
           >
-            Ver no github
+            {githubButton}
           </a>
         </button>
       </div>
