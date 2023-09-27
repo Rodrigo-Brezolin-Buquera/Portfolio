@@ -2,11 +2,9 @@ import { projectsList } from "./projects";
 import ProjectDetails from "./ProjectDetails";
 import ChevronButton from "./ChevronButton";
 import { useCarousel } from "./useCarousel";
-import { useResize } from "../../hooks/useResize";
 
 const ProjectList = () => {
   const { currentProject, nextProject, prevProject } = useCarousel(projectsList);
-  const imageSize = useResize("40px","50px","60px")
 
   const list = projectsList.map((project, index) => {
     const direction = index % 2 === 0 ? "forward" : "reverse";
@@ -23,9 +21,8 @@ const ProjectList = () => {
 
   return (
     <div className={"relative w-full h-full"}>
-      <ChevronButton size={imageSize} side={"right"} handler={nextProject} />
-      <ChevronButton size={imageSize} side={"left"} handler={prevProject} />
-
+      <ChevronButton side={"right"} handler={nextProject} />
+      <ChevronButton side={"left"} handler={prevProject} />
       {list}
     </div>
   );
