@@ -5,7 +5,7 @@ import { useCarousel } from "./useCarousel";
 import { useResize } from "../../hooks/useResize";
 
 const ProjectList = () => {
-  const { currentProject, nextProject, prevProject } = useCarousel();
+  const { currentProject, nextProject, prevProject } = useCarousel(projectsList);
   const imageSize = useResize("40px","50px","60px")
 
   const list = projectsList.map((project, index) => {

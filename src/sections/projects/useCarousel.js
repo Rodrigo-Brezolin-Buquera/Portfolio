@@ -1,10 +1,9 @@
-import { projectsList } from "./projects";
 import { useState } from "react";
 
-export const useCarousel = () => {
+export const useCarousel = (list) => {
     const [currentProject, setCurrentProject] = useState(0);
 
-    const numProjects = projectsList.length;
+    const numProjects = list.length;
   
     const nextProject = () => {
       setCurrentProject((currentProject + 1) % numProjects);
