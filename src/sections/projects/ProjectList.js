@@ -1,12 +1,15 @@
-import { projectsList } from "./projects";
 import ProjectDetails from "./ProjectDetails";
 import ChevronButton from "./ChevronButton";
 import { useCarousel } from "./useCarousel";
+import { useLanguage } from "../../global/LanguageContext";
 
 const ProjectList = () => {
-  const { currentProject, nextProject, prevProject } = useCarousel(projectsList);
+  const {getText} = useLanguage()
+  const {projects} = getText()
 
-  const list = projectsList.map((project, index) => {
+  const { currentProject, nextProject, prevProject } = useCarousel(projects);
+
+  const list = projects.map((project, index) => {
     const direction = index % 2 === 0 ? "forward" : "reverse";
     return (
       <div

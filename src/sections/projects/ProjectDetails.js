@@ -8,13 +8,12 @@ const ProjectDetails = ({ project, direction }) => {
  
   const flexDirection= direction === "reverse" ? "sm:flex-row-reverse  bg-pink-light " : "sm:flex-row bg-pink";
   const textPadding = direction === "reverse" ? "sm:pl-24" : "sm:pr-24"
-
-
+  const imageUrl = require("../../assets/" + image)
   return (
     <article className={`w-scren flex flex-col justify-between mb-8 ${flexDirection}`}>
       <img
-        src={image}
-        alt={"texto mock"}
+        src={imageUrl}
+        alt={"Project"}
         className="overflow-hidden"
         style={{width: imageSize}}
       />
