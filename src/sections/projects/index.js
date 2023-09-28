@@ -10,13 +10,13 @@ const Projects = () => {
   const customHeight = () => {
     switch (size) {
       case 1:
-        return "1100px";
+        return "1000px";
       case 2:
-        return "650px";
+        return "850px";
       case 3:
-        return "700px";
+        return "650px";
       default:
-        return "1100px";
+        return "1000px";
     }
   };
 
