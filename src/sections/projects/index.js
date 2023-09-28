@@ -4,8 +4,8 @@ import { useLanguage } from "../../global/LanguageContext";
 
 const Projects = () => {
   const size = useResize(1, 2, 3);
-  const {getText} = useLanguage()
-  const {projectTitle} = getText()
+  const { getText } = useLanguage()
+  const { projectTitle } = getText()
 
   const customHeight = () => {
     switch (size) {
