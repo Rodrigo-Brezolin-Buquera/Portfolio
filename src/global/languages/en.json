@@ -1,0 +1,53 @@
+{
+    "name": "Rodrigo Brezolin Buquera",
+    "title": "Fullstack Web Developer",
+    "description": "My journey is an endless quest for new knowledge. This quest led me to my background as an environmental engineer and postgraduate studies. However, the thirst for learning and the pursuit of new challenges led me to a career transition. Today, as a fullstack web developer, I offer solid technical skills and am ready to tackle challenges and innovations, delivering top-quality solutions.",
+    "cvButton": "Download CV",
+    "frontend": ["HTML", "CSS", "JavaScript", "React.js", "Next.js", "Jest", "Tailwind"],
+    "backend": ["Node.js", "Typescript", "SQL", "Firebase", "AWS", "Jest"],
+    "projectTitle": "Projects",
+    "projects": [
+      {
+        "name": "Student System - Yoga Mangala",
+        "area": "Frontend",
+        "description": "Yoga Mangala is a Yoga studio, and the application allows students to access information about their contracts and check-in for classes. For administrators, it offers user management, contract management, and class scheduling features.",
+        "status": "In production",
+        "techs": ["React", "Next.js", "Firebase", "ChakraUI", "Jest"],
+        "githubURL": "https://github.com/Rodrigo-Brezolin-Buquera/YGM-system",
+        "image": "project3.jpg"
+      },
+      {
+        "name": "Landing Page - Yoga Mangala",
+        "area": "Frontend",
+        "description": "The Yoga Mangala website's landing page is the perfect entry point to get to know the Yoga studio. It provides essential information and offers an inviting experience to explore our services and classes.",
+        "status": "In production",
+        "techs": ["React", "Next.js", "Firebase", "ChakraUI"],
+        "githubURL": "https://github.com/Rodrigo-Brezolin-Buquera/YGM-landing-page",
+        "image": "project4.jpg"
+      },
+      {
+        "name": "Backend - Yoga Mangala",
+        "area": "Backend",
+        "description": "The API for Yoga Mangala services is designed using a 4-layer architecture, dividing the application into 6 modules: Authentication, Plans, Calendar, Contracts, Scheduling, and Company. As a database, we opted for the non-relational Firestore database.",
+        "status": "In testing",
+        "techs": ["Typescript", "Express", "Firebase-admin", "Jsonwebtoken", "Nodemailer", "Jest"],
+        "githubURL": "https://github.com/Rodrigo-Brezolin-Buquera/YGM-backend-firestore",
+        "image": "project1.jpg"
+      },
+      {
+        "name": "App - Yoga Mangala",
+        "area": "Frontend-mobile",
+        "description": "Mobile version of the web student system in early development stages. It will offer the same functionality as the web version for both students and administrators.",
+        "status": "In development",
+        "techs": ["React Native", "Expo", "React Navigation"],
+        "githubURL": "https://github.com/Rodrigo-Brezolin-Buquera/YGM-mobile",
+        "image": "project2.jpg"
+      }
+    ],
+    "usedTechs":"Technologies used:",
+    "githubButton": "View on GitHub",
+    "contact": "Contacts:",
+    "email": "rodrigobbuquera@gmail.com",
+    "phone": "+55 11 98684-3389"
+  }
+  
