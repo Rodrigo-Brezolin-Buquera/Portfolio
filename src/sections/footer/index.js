@@ -23,7 +23,7 @@ const Footer = () => {
       <div className=" flex flex space-x-8 mt-4 sm:mt-8 ">
         <IconGroup size={imageSize} />
       </div>
-      <p className=" text-xs absolute bottom-1 left-1 ">
+      <p className=" text-xs absolute bottom-1 right-1 ">
         @ 2023, Rodrigo Brezolin
       </p>
     </footer>

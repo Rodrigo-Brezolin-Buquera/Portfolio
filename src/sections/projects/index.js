@@ -25,9 +25,9 @@ const Projects = () => {
       className={`flex w-full flex-col items-center`}
       style={{ height: customHeight() }}
     >
-      <p className="text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-wide pb-4 xl:pb-6 text-black">
+      <h1 className="text-2xl lg:text-3xl xl:text-4xl font-semibold tracking-wide pb-4 xl:pb-6 text-black">
         {projectTitle}
-      </p>
+      </h1>
       <ProjectList />
     </section>
   );

@@ -7,15 +7,15 @@ const DescriptionText = () => {
   const { name, title, description, cvButton } = getText()
 
   return (
-    <article className="md:w-1/2 flex flex-col min-h-fit image-appear">
-      <p className="font-bold text-2xl  lg:text-3xl pt-8 tracking-wide text-center sm:text-left">
+    <article className="md:w-1/2 lg:w-2/3 flex flex-col min-h-fit image-appear">
+      <h1 className="font-bold text-2xl  lg:text-3xl pt-8 tracking-wide text-center sm:text-left">
         {name}
-      </p>
-      <p className="font-semibold text-xl  lg:text-2xl tracking-wide pb-4 text-center sm:text-left">
+      </h1>
+      <h2 className="font-semibold text-xl  lg:text-2xl tracking-wide pb-4 text-center sm:text-left">
         {title}
-      </p>
+      </h2>
       <br />
-      <p className="text-sm tracking-wide lg:text-lg text-center sm:text-left">
+      <p className="text-sm lg:text-lg text-center sm:text-left">
         {description}
       </p>
 
